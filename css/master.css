@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "popppins", sans-serif;
+}
+
+body{          
+    background-color: #00425A;
+}
+
+
+img{
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    list-style-type: none;    
+    position: relative;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+}
+
+ul li a{
+    position: relative;
+    font-size: 1.5em;
+    text-decoration: none;
+    line-height: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 05);
+}
+
+ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 4px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*=== Aplicacndo CSS al encabezado ===*/
+#logo{
+    background-color: aliceblue;
+    width: 50%;
+    margin: 0;
+    padding-top: 10px;
+}
+#menu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+}
+
+/*=== Aplicando comportamiento resposive o adaptativo===*/
+
+/* Medium devices (tablets, 768px and up)*/
+/*=== Trabajando con CSS-GRID===*/
+@media (min-width: 768px) { 
+    /*=== Aplicando CSS al encabezado===*/
+    #encabezado{
+        display: grid;
+        grid-template-columns: 1fr 2fr; /*Medidas: px em rem % fr*/
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+    }
+    #menu{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    
+    /*=== Aplicando CSS a la Galería===*/
+    section#galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    /*=== Aplicando CSS al Footer===*/
+    #piePagina{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 0.5fr;
+        justify-items: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+    }
+    #redesSociales{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    ion-icon{
+        color: white;
+        font-size: 2rem;
+    }
+
+
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    section#galeria{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /*=== Aplicando CSS a los productos ===*/
+#productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*=== Aplicando CSS a la galeria ===*/
+section#galeria{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 10px;
+}
+}
