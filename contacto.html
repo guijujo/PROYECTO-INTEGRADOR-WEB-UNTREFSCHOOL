@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <section id="formulario">
+        <h3>comentarios</h3>
+        <form action="https://formsubmit.co/el/wofela" method="POST">
+            <div>
+                <label for="Nombre">Nombre</label>                        
+                <input type="text" name="Nombre" value="" id="Nombre" placeholder="Ingrese su nombre" maxlength="50" minlength="3" required>
+            </div>
+
+            <div>
+                <label for="Apellido">Apellido</label>
+
+                <input type="text" name="Apellido" value="" id="Apellido" placeholder="Indique su apellido" maxlength="50" minlength="3" required>
+            </div>
+
+            <div>
+                <label for="E-mail">E-mail</label>
+                
+                <input type="email" name="E-mail" value="" id="E-mail" placeholder="Indique su correo" maxlength="50" minlength="5" required>
+            </div>
+
+            <div>
+                <label for="Comentarios">Comentarios</label>
+                
+                <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Indique sus comentarios hasta 500 palabras..." maxlength="500" minlength="20" resize="none" required></textarea>
+            </div>
+
+            <div>                        
+                <button type="submit" class="botonComentario">Enviar comentarios</button>
+            </div>
+       </form>
+    </section>
+</body>
+</html>
