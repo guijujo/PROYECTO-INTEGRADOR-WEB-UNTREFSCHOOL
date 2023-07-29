@@ -1,42 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/master.css">
 </head>
 <body>
-    <section id="formulario">
-        <h3>comentarios</h3>
+    <div class="container">
+        <div class="mb-3">
+            <h3 class="display-6 text-uppercase fw-bold">comentarios</h3>
         <form action="https://formsubmit.co/el/wofela" method="POST">
             <div>
-                <label for="Nombre">Nombre</label>                        
-                <input type="text" name="Nombre" value="" id="Nombre" placeholder="Ingrese su nombre" maxlength="50" minlength="3" required>
+                <label for="Nombre" class="form-label display-7 text-uppercase fw-bold">Nombre</label>                        
+                <input type="text" name="Nombre" value="" class="form-control" id="Nombre" placeholder="Ingrese su nombre" maxlength="50" minlength="3" required>
             </div>
 
             <div>
-                <label for="Apellido">Apellido</label>
+                <label for="Apellido" class="form-label display-7 text-uppercase fw-bold">Apellido</label>
 
-                <input type="text" name="Apellido" value="" id="Apellido" placeholder="Indique su apellido" maxlength="50" minlength="3" required>
+                <input type="text" name="Apellido" value="" class="form-control" id="Apellido" placeholder="Indique su apellido" maxlength="50" minlength="3" required>
             </div>
 
             <div>
-                <label for="E-mail">E-mail</label>
+                <label for="E-mail" class="form-label display-7 text-uppercase fw-bold">E-mail</label>
                 
-                <input type="email" name="E-mail" value="" id="E-mail" placeholder="Indique su correo" maxlength="50" minlength="5" required>
+                <input type="email" name="E-mail" value="" class="form-control" id="E-mail" placeholder="Indique su correo" maxlength="50" minlength="5" required>
             </div>
 
             <div>
-                <label for="Comentarios">Comentarios</label>
+                <label for="Comentarios" class="form-label display-7 text-uppercase fw-bold">Comentarios</label>
                 
-                <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Indique sus comentarios hasta 500 palabras..." maxlength="500" minlength="20" resize="none" required></textarea>
+                <textarea name="Comentarios" class="form-control" id="Comentarios" cols="30" rows="10" placeholder="Indique sus comentarios hasta 500 palabras..." maxlength="500" minlength="20" resize="none" required></textarea>
             </div>
-
+            <br>
             <div>                        
-                <button type="submit" class="botonComentario">Enviar comentarios</button>
+                <input type="submit" class="btn btn-primary text-uppercase fw-bold" value="Enviar">
+                <input class="btn btn-primary text-uppercase fw-bold" type="reset" value="Reset">
             </div>
        </form>
-    </section>
+        </div>
+    </div>    
 </body>
 </html>

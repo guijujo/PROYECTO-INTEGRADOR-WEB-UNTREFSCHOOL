@@ -1,142 +1,44 @@
-body{  
-    margin: 0;
-    padding: 0;         
+/*=== Aplicando CSS general ===*/
+body{
     background-color: #00425A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    font-family: "popppins", sans-serif;    
+}
+
+.container img{
+    width: 100%;
 }
 
 ul{
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    padding-inline-start: 0;
+    margin-block-end: 0;
     gap: 15px;
-    text-transform: uppercase; 
-    padding-inline-start: 0px;        
+    
 }
 
-ul li a{
-    color: #EFF5F5;
-    text-decoration: none;          
+li{
+    align-content: center;
 }
 
-img{
-    width: 100%;
-    border-radius: 2%;
+h2{
+    color: #1F8A70;
+    text-align: center;
+}
+h3{
+    color: #FC7300;
 }
 
-a{
-    text-decoration: none;
+h4{
     color: #EFF5F5;
 }
 
 p{
-    text-align: justify;
-    color: beige;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 5%;
-    font-family: "belanosima";
-}
-
-html{
-    scroll-behavior: smooth;    
-}
-
-h2,h3{
-    text-align: center;
-    text-transform: uppercase;
-    color: #1F8A70;
-    font-size: 25px;    
-}
-
-h5{
-    text-align: center;
-}
-
-strong{
-    text-transform: uppercase;
-    color: #FC7300;
-}
-
-article{
-    padding-bottom: 10px;
-}
-
-/*=== Aplicacndo CSS al encabezado ===*/
-
-#logo{
-    background-color: #EFF5F5;
-    width: 100%;  
-    margin: 0%;      
-}
-
-#menuEncabezado{
-    display: grid;    
-    text-align: center;
-    grid-template-columns: 1fr 2fr;    
-}
-
-#menuSesion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 1%;
-    margin-right: 1%;    
-    align-items: center;            
-}
-
-#menuNavegacion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#banner{
-    position: relative;
-}
-
-#subtituloBanner{
-    position: absolute;
-    top: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    background-color: rgba(0,0,0, 0.6);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    text-align: center;
-}
-
-/*=== Aplicando CSS al Footer===*/
-#piePagina{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: w#EFF5F5;
-    gap: 15px;
-}
-
-#redesSociales{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    font-size: 1.5rem;    
-}
-
-ion-icon{
-    align-items: center;
     color: #EFF5F5;
-    font-size: 1.5rem;
+    text-align: justify;
 }
 
-input{
-    width: 100%;
+a{
+    text-decoration: none;
+    color: #EFF5F5;    
 }
 
 form{
@@ -149,44 +51,16 @@ textarea {
     resize: none;
 }
 
-footer{    
-    margin-top: auto;
+article{
     margin-bottom: 5%;
 }
 
-button{
-    text-decoration: none;
-    position: relative;
-    border: none;
-    color: #EFF5F5;
-    width: 8em;
-    height: 3em;    
-    text-align: center;
-    background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
-    background-size: 300%;
-    border-radius: 30px;
-    z-index: 1;
-}
 
-.botonComentario{
-    position: relative;
-    display: grid;
-    justify-content: center;
-    color: #EFF5F5;    
-    padding: 10px;
-    width: 100%;
-    gap: 20px;
-    border-radius: 30px;
-    transition: box-shadow 1s;
-    animation: ani 8s linear infinite;
-}
+/*=== Aplicacndo CSS al encabezado ===*/
 
-.botonComentario:hover{
-    cursor: pointer;
-    color: #EFF5F5;
-    background-color: #EFF5F5;
-    text-transform: uppercase;
-    border: 2px solid #EFF5F5;       
+.p-2 {
+    padding: 0 !important;
+    font-size: medium;
 }
 
 button:hover{
@@ -230,14 +104,12 @@ button:active{
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-    
     /*=== Aplicando CSS al encabezado===*/
     #menuEncabezado{
         display: grid;        
         align-items: center;
-        grid-template-rows: auto 1px auto;               
+                       
     }
-    
 
     #menuSesion{
         display: inline-flex;
@@ -253,21 +125,22 @@ button:active{
 
     #logo{
         background-color: #EFF5F5;
-        width: 10%;        
+        width: 50%;        
     }
 
-    #subtituloBanner{
-        position: absolute;
-        top: 20%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 3rem;
-        color: white;
-        background-color: rgba(0,0,0, 0.6);
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 100%;
-        text-align: center;
-    }
+#subtituloBanner{
+    position: relative;    
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0,0,0, 0.6);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
 
     nav ul li a:hover {
         animation: ani 8s linear infinite;
@@ -308,8 +181,8 @@ button:active{
         border: none;
         color: #EFF5F5;
         font-size: 25px;
-        width: 5em;
-        height: 1em;    
+        width: 8em;
+        height: 3em;    
         text-align: center;
         background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
         background-size: 300%;
@@ -424,133 +297,11 @@ button:active{
     }
 }
 
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-    #menuEncabezado{
-        display: grid;        
-        align-items: center;
-        grid-template-columns: 1fr 2fr;                
-    }
-
-    #menuSesion{
-        margin: 0%;
-    }
-
-    #menuNavegacion{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        height: fit-content;        
-    }    
-
-    #logo{
-        background-color: #EFF5F5;
-        width: 100%;
-        margin: auto; 
-    }
-
-    #subtituloBanner{
-        position: absolute;
-        top: 20%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 3rem;
-        color: white;
-        background-color: rgba(0,0,0, 0.6);
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /*Aplicando CSS al párrafo*/
-
-    p{
-        font-size: 25px;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 0%;
-        padding-bottom: 0%;
-    }
-
-    h2,h3,h4,h5{
-        font-size: 35px;
-        margin: 0%;
-    }
-
-    article{
-        padding: 0%;
-    }
-    
-    button{
-        text-decoration: none;
-        position: relative;
-        border: none;
-        color: #EFF5F5;
-        font-size: 25px;
-        width: 8em;
-        height: 3em;    
-        text-align: center;
-        background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b, #03a9f4);
-        background-size: 300%;
-        border-radius: 30px;
-        z-index: 1;
-    }
-
-    strong{
-        font-size: 25px;
-    }
-    
-    #descripcionQuienes{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #porQueElegirnos{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    #formacionIntegral{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);        
-        align-items: center;
-    }
-
-    #ultimasNoticias{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }    
-
-    /*=== Aplicando CSS al Footer===*/
-
-    #piePagina{
-        display: grid;        
-    }
-    #contactoSocial{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        justify-items: center;
-        align-items: center;
-        color: #EFF5F5;
-    }
+@media (min-width: 768px) {
+    /*=== Aplicando comportamiento responsive a adaptativo ===*/
 
     
-    .botonComentario{
-        position: relative;
-        display: grid;
-        justify-content: center;
-        padding: 20px;
-        color: #EFF5F5;
-        border-radius: 30px;
-        transition: box-shadow 1s;
-        animation: ani 8s linear infinite;
-    }
-        
-    ion-icon{
-        color: #EFF5F5;
-        font-size: 2rem;
-    }
-    #subir{
-        display: grid;        
-        justify-content: center;
-    }
 }
+
+
+

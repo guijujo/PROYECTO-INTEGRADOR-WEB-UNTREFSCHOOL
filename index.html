@@ -3,207 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROYECTO FINAL INTEGRADOR - GARCIA GUILLERMO</title>
+    <title>PROYECTO INTEGRADOR - GARCIA GUILLERMO</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/css/bootstrap.css">
+    
     <link rel="stylesheet" href="./css/master.css">
 </head>
 <body>
-    <div class="container" id="container">
-        <header id="encabezado">                    
-            <div id="menu">
-                <nav id="menuEncabezado">
-                    <figure id="logo">
-                        <img src="./img/logo_untref.png" alt="LOGO UNTREF">
-                    </figure>
-                    <nav> 
-                        <ul id="menuSesion" class="botonSesion">
-                            <li><button>Inicio sesión</button></li>
-                            <li><button>Registro</button></li>
-                        </ul>
-                    </nav> 
-                </nav>                   
-                <nav>
-                    <ul id="menuNavegacion">
-                        <li style="--clr:#00ade1">
-                            <a href="#quienesSomos" data-text="&nbsp;¿Quiénes&nbsp;somos?&nbsp;">&nbsp;¿Quiénes somos?&nbsp;</a>
-                        </li>
-                        
-                        <li style="--clr:#ff6493">
-                            <a href="#porQueElegirnos" data-text="&nbsp;¿Por&nbsp;qué&nbsp;elegirnos?&nbsp;">&nbsp;¿Por qué elegirnos?&nbsp;</a>
-                        </li>
-                        
-                        <li style="--clr:#ffdd1c">
-                            <a href="#propuestaEducativa" data-text="&nbsp;Propuesta&nbsp;educativa&nbsp;">&nbsp;Propuesta educativa&nbsp;</a>
-                        </li>
-                        
-                        <li style="--clr:#00dc82">
-                            <a href="#ultimasNoticias" data-text="&nbsp;Últimas&nbsp;noticias&nbsp;">&nbsp;Últimas noticias&nbsp;</a>
-                        </li>
-                        
-                        <li style="--clr:#dc00d4">
-                            <a href="#contacto" data-text="&nbsp;Contacto&nbsp;">&nbsp;Contacto&nbsp;</a>
-                        </li>
-                    </ul>
-                </nav>                
-            </div>        
-        </header>
-        
-        <section id="banner">
-            <img src="./img/banner.jpg" alt="">
-            <h2 id="subtituloBanner">INSTITUTO untrefschool</h2>
-        </section>
-        <hr>
-        <br>
-        <h2>¿Quiénes sómos?</h2>
-        <section id="quienesSomos">            
-            
-                 <img src="./img/quienesSomos.jpg" alt="quienesSomos" id="imgQuien">
-                 <p>Bienvenidos a Primaria <strong>UntrefSchool</strong>, una institución educativa comprometida con el desarrollo integral de cada estudiante. Desde nuestra fundación en 1995, hemos brindado una educación de calidad, fomentando el amor por el aprendizaje, el respeto y la creatividad. Nuestro equipo docente altamente calificado trabaja arduamente para cultivar el potencial único de cada niño y niña que pasa por nuestras aulas. Creemos en una educación inclusiva y motivadora, donde cada estudiante se sienta valorado y apoyado para alcanzar el éxito académico y personal.
-                 </p>                   
-            
-        </section>      
-        <hr>
-        <section>
-            <h2>¿Por qué elegirnos?</h2>
-            <div id="porQueElegirnos">
-                <p><strong>Enfoque personalizado:</strong> Reconocemos que cada estudiante es único, por lo que ofrecemos una educación personalizada que se adapta a las necesidades y fortalezas individuales. Nuestros docentes utilizan metodologías innovadoras y recursos didácticos actualizados para garantizar un aprendizaje significativo y divertido.
-                </p>
-                            
-                <p><strong>Ambiente acogedor y seguro:</strong> En Primaria UntrefSchool, nos esforzamos por crear un ambiente cálido y seguro donde cada estudiante se sienta como en casa. Fomentamos la empatía, la amistad y el trabajo en equipo para construir una comunidad escolar positiva.
-                </p>                             
-            
-                <p><strong>Excelencia académica:</strong> Nuestra institución se enorgullece de sus resultados académicos destacados. Contamos con un plan de estudios riguroso que busca desarrollar habilidades cognitivas, sociales y emocionales en nuestros alumnos, preparándolos para los desafíos del futuro.</p>
-            </div>            
-        </section>        
-        <hr>
-        <section id="propuestaEducativa">
-            <h2>Propuesta educativa</h2>            
-            <p>En Primaria <strong>UntrefSchool</strong>, nuestra propuesta educativa se fundamenta en tres pilares:</p>
-
-            <div id="formacionIntegral">
-                
-                <article><img src="./img/formacionIntegral.jpg" alt="formacionIntegral"></article>
-                
-                <div>
-                    <h5><strong>Formación Integral:</strong>
-                    </h5>
-                    <p>Buscamos desarrollar las habilidades intelectuales, físicas, sociales y emocionales de cada estudiante. Nuestro enfoque holístico garantiza que los alumnos se conviertan en individuos equilibrados y seguros de sí mismos.</p> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="encabezado">
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="#"><img src="./img/logo_untref.png" alt="Logo" width="50" height="34" class="d-inline-block align-text-top" style="background-color: #EFF5F5; border-radius: 5%;"> UntrefSchool</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse"  id="navbarNav" class="d-flex justify-content-between">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#quienesSomos">¿Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#porQueElegirnos">¿Por qué elegirnos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#propuestaEducativa">Propuesta educatica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#ultimasNoticias">Últimas noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#piePagina">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Iniciar sesión</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Registrarse</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+        <div class="container">                   
+        <div id="banner">
+            <h2 class="text-uppercase p-3 mb-2 bg-dark text-white bg-gradient" id="subtituloBanner">Instituto UntrefSchool</h2>
+            <img src="./img/banner.jpg" alt="banner">            
+        </div>
+        <div id="quienesSomos">
+            <h2 class="display-6 fw-bold text-uppercase">¿Quiénes somos?</h2>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="./img/quienesSomos.jpg" class="img-fluid" alt="quienesSomos">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="fs-2 lh-1">Bienvenidos a Primaria <strong>UntrefSchool</strong>, una institución educativa comprometida con el desarrollo integral de cada estudiante. Desde nuestra fundación en 1995, hemos brindado una educación de calidad, fomentando el amor por el aprendizaje, el respeto y la creatividad. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="fs-2 lh-1">Nuestro equipo docente altamente calificado trabaja arduamente para cultivar el potencial único de cada niño y niña que pasa por nuestras aulas. Creemos en una educación inclusiva y motivadora, donde cada estudiante se sienta valorado y apoyado para alcanzar el éxito académico y personal.</p>
+                    </div>
+                  </div> 
                 </div>                           
+        </div>
+        <div class="container" id="porQueElegirnos">
+            <div class="row">
                 
-                <article>
-                    <img src="./img/metodologiaInnovadora.jpg" alt="metodologiaInnovadora">
-                </article>
-
-                <div>
-                    <h5><strong>Metodología Innovadora:</strong>
-                    </h5>            
-                    <p>Nuestro equipo docente utiliza metodologías pedagógicas modernas que fomentan el pensamiento crítico, la resolución de problemas y el aprendizaje activo. Nos adaptamos constantemente a las nuevas tendencias educativas para asegurar una educación de vanguardia.                    
-                    </p> 
-                </div>                          
-                
-                <article>
-                    <img src="./img/valoresCiudadania.jpg" alt="valoresCiudadania">
-                </article>
-                
-                <div>
-                    <h5><strong>Valores y Ciudadanía:</strong></h5>            
-                
-                <p>Enseñamos a nuestros estudiantes a ser ciudadanos responsables, éticos y respetuosos. Promovemos valores como la tolerancia, la solidaridad y el respeto por el medio ambiente, preparando a nuestros alumnos para ser agentes de cambio positivo en la sociedad.                
-                </p>
-                </div>                
-            </div>
-
-        </section>
-        <hr>
-        <section>
-            
-            <h2>Últimas noticias</h2>            
-            <div id="ultimasNoticias">
-                <div>
-                    <h5><strong>Visita al Museo de Ciencias Naturales:</strong>               
-                    </h5>                
-                    
-                    <p>Los estudiantes de cuarto grado disfrutaron de una emocionante visita educativa al Museo de Ciencias Naturales. Aprendieron sobre la biodiversidad, fósiles y ecosistemas, fortaleciendo su comprensión del mundo natural.</p>
+                <h2 class="display-6 fw-bold text-uppercase">¿Por qué elegirnos?</h2>
+                <div class="col-sm-4">
+                    <h4 class="display-7 text-uppercase fw-bold">Enfoque personalizado:</h4>
+                    <p class="fs-2 lh-1">Reconocemos que cada estudiante es único, por lo que ofrecemos una educación personalizada que se adapta a las necesidades y fortalezas individuales. Nuestros docentes utilizan metodologías innovadoras y recursos didácticos actualizados para garantizar un aprendizaje significativo y divertido.
+                    </p>
                 </div>
-                
-                <div>
-                    <h5><strong>Proyecto Solidario "Unidos por un futuro mejor":</strong>            
-                    </h5> 
-                    
-                    <p>La comunidad educativa se unió para apoyar a una escuela rural cercana, donando libros, material escolar y juguetes para los niños. Fue un hermoso ejemplo de solidaridad y empatía, inculcando valores fundamentales en nuestros estudiantes.</p>
+                <div class="col-sm-4">
+                    <h4 class="display-7 text-uppercase fw-bold">Ambiente acogedor y seguro:</h4>
+                    <p class="fs-2 lh-1"> En Primaria UntrefSchool, nos esforzamos por crear un ambiente cálido y seguro donde cada estudiante se sienta como en casa. Fomentamos la empatía, la amistad y el trabajo en equipo para construir una comunidad escolar positiva.
+                    </p>
                 </div>
-                
-                <div>
-                    <h5><strong>Torneo Interescolar de Matemáticas:</strong>            
-                    </h5>
-                                    
-                    <p>Nuestros talentosos estudiantes participaron en el torneo de matemáticas, donde demostraron sus habilidades numéricas y lógicas. Felicitamos a nuestros representantes por su excelente desempeño y su entusiasmo por el aprendizaje.</p>
-                </div>                
+                <div class="col-sm-4">
+                    <h4 class="display-7 text-uppercase fw-bold">Excelencia académica:</h4>
+                    <p class="fs-2 lh-1"> Nuestra institución se enorgullece de sus resultados académicos destacados. Contamos con un plan de estudios riguroso que busca desarrollar habilidades cognitivas, sociales y emocionales en nuestros alumnos, preparándolos para los desafíos del futuro.</p>
+                </div>
+              </div>            
+        </div>
+        <div id="propuestaEducativa">
+            <h2 class="display-5 text-uppercase fw-bold">Propuesta educativa</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./img/formacionIntegral.jpg" alt="formacionIntegral">    
+                    </div>
+                    <div class="col-md-auto col-md-6">
+                        <h3 class="display-6"><strong>Formación Integral:</strong>
+                        </h3>
+                        <p class="fs-2 lh-1">Buscamos desarrollar las habilidades intelectuales, físicas, sociales y emocionales de cada estudiante. Nuestro enfoque holístico garantiza que los alumnos se conviertan en individuos equilibrados y seguros de sí mismos.</p>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./img/metodologiaInnovadora.jpg" alt="metodologiaInnovadora">
+                    </div>
+                    <div class="col-md-auto col-md-6">
+                        <h3 class="display-6"><strong>Metodología Innovadora:</strong>
+                        </h3>            
+                        <p class="fs-2 lh-1">Nuestro equipo docente utiliza metodologías pedagógicas modernas que fomentan el pensamiento crítico, la resolución de problemas y el aprendizaje activo. Nos adaptamos constantemente a las nuevas tendencias educativas para asegurar una educación de vanguardia.                    
+                        </p>
+                    </div>                     
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./img/valoresCiudadania.jpg" alt="valoresCiudadania">
+                    </div>
+                    <div class="col-md-auto col-md-6">
+                        <h3 class="display-6"><strong>Valores y Ciudadanía:</strong></h3>         
+                    <p class="fs-2 lh-1">Enseñamos a nuestros estudiantes a ser ciudadanos responsables, éticos y respetuosos. Promovemos valores como la tolerancia, la solidaridad y el respeto por el medio ambiente, preparando a nuestros alumnos para ser agentes de cambio positivo en la sociedad.                
+                    </p>
+                    </div>                    
+                </div>
             </div>
             
+        </div>
+        <div id="ultimasNoticias">
+            <h2 class="display-5 text-uppercase fw-bold">Últimas noticias</h2>
             <div>
-                <p style="font-size: 150%;">¡Gracias por visitar la página web de Primaria <strong>UntrefSchool</strong>!
-                </p>
-
-                <p>Estamos comprometidos con brindar una educación de calidad y formar a los líderes del mañana. Si deseas más información o quieres formar parte de nuestra comunidad educativa, no dudes en contactarnos. Estamos ansiosos por conocerte y acompañarte en este emocionante viaje educativo.                    
-                </p>
+                <h3 class="display-6"><strong>Visita al Museo de Ciencias Naturales:</strong></h3>            
+                <p class="fs-2 lh-1">Los estudiantes de cuarto grado disfrutaron de una emocionante visita educativa al Museo de Ciencias Naturales. Aprendieron sobre la biodiversidad, fósiles y ecosistemas, fortaleciendo su comprensión del mundo natural.</p>
             </div>
-
-        </section>    
-        <hr>
-        <footer id="piePagina">
-            <div id="contactoSocial">
+            <div>
+                <h3 class="display-6"><strong>Proyecto Solidario "Unidos por un futuro mejor":</strong></h3>            
+                <p class="fs-2 lh-1">La comunidad educativa se unió para apoyar a una escuela rural cercana, donando libros, material escolar y juguetes para los niños. Fue un hermoso ejemplo de solidaridad y empatía, inculcando valores fundamentales en nuestros estudiantes.</p>
                 <div>
-                    <h3 style="color: #1F8A70;">Redes sociales</h3>
-                    <ul id="redesSociales">                
-                        <li><a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a><a href="https://www.facebook.com" target="_blank"> UntrefSchool</a>
-                        </li>
-    
-                        <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a> <a href="https://www.instagram.com" target="_blank">UntrefSchool</a>
-                        </li>
-    
-                        <li><a href="https://www.Linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a> <a href="https://www.Linkedin.com" target="_blank">untrefschool</a>
-                        </li>                
-                    </ul>
+                    <h3 class="display-6"><strong>Torneo Interescolar de Matemáticas:</strong></h3>
+                    <p class="fs-2 lh-1">Nuestros talentosos estudiantes participaron en el torneo de matemáticas, donde demostraron sus habilidades numéricas y lógicas. Felicitamos a nuestros representantes por su excelente desempeño y su entusiasmo por el aprendizaje.</p>
+                </div> 
+            </div>
+        </div>
+        <div>
+            <h3 class="text-center display-6">¡Gracias por visitar la página web de Primaria <strong>UntrefSchool</strong>!</h3>    
+            <p class="fs-2 lh-1">Estamos comprometidos con brindar una educación de calidad y formar a los líderes del mañana. Si deseas más información o quieres formar parte de nuestra comunidad educativa, no dudes en contactarnos. Estamos ansiosos por conocerte y acompañarte en este emocionante viaje educativo.                    
+            </p>
+        </div>
+        <footer id="piePagina">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                            <h2 class="text-uppercase">Redes sociales</h2>
+                            <div class="col container-fluid ">
+                                <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>          
+                                <a href="https://www.facebook.com" target="_blank"> UntrefSchool</a>                                    
+                            </div>
+                            <div class="col container-fluid">
+                                <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a> <a href="https://www.instagram.com" target="_blank"> UntrefSchool</a>
+                            </div>
+                            <div class="col container-fluid">
+                                <a href="https://www.Linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a> <a href="https://www.Linkedin.com" target="_blank"> UntrefSchool</a> 
+                            </div>            
+                    </div>
+                    <div class="col-sm-4">                        
+                            <h2 class="text-uppercase">Contacto</h2>                            
+                                <div class="col">
+                                    <a href="mailto:untrefschool@untref.com" target="_blank"><ion-icon name="mail"></ion-icon> E-mail: 
+                                    <a href="mailto:untrefschool@untref.com">untrefschool@untref.com</a>
+                                </div>
+                                <div class="col">
+                                    <a href="tel:+54112223333" target="_blank"><ion-icon name="phone-portrait"></ion-icon> Tel.: 
+                                    <a href="tel:+54112223333" target="_blank">11 222 3333</a>
+                                </div>
+                                <div class="col">
+                                    <a href="https://wa.me/54112223344" target="_blank" ><ion-icon name="logo-whatsapp" ></ion-icon> Whatsapp: 
+                                        <a href="https://wa.me/54112223344" target="_blank">11 222 3344</a>
+                                </div>                                                
+                    </div>
+                    <div class="col-sm-4">                                                   
+                                <h2 class="text-uppercase">Aquí nos encontramos
+                                </h2>
+                                
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1250.3270728988355!2d-56.68119529717952!3d-27.57930464082308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690289993515!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>                        
+                    </div>
                 </div>
-    
+            </div>
+            <div id="contactoSocial">
+                <div id="redes">
+                    
+                </div>    
                 <div id="contacto">
-                    <h3 style="color: #1F8A70;">Contacto</h3>
-                    <ul>
-                        <li><a href="mailto:untrefschool@untref.com" target="_blank"><ion-icon name="mail"></ion-icon> E-mail: 
-                            <a href="mailto:untrefschool@untref.com">untrefschool@untref.com</a>
-                        </li>
-    
-                        <li><a href="tel:+54112223333" target="_blank"><ion-icon name="phone-portrait"></ion-icon> Tel.: 
-                            <a href="tel:+54112223333" target="_blank">11 222 3333</a>
-                        </li>
-    
-                        <li><a href="https://wa.me/54112223344" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon> Whatsapp: 
-                            <a href="https://wa.me/54112223344" target="_blank">11 222 3344</a>
-                        </li>
-                    </ul>
+                    
                 </div>
                        
                 <div id="mapa">
-                    <h4 style="text-align: center; color: #1F8A70;">Aquí nos encontramos
-                    </h4>         
-                       
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1250.3270728988355!2d-56.68119529717952!3d-27.57930464082308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690289993515!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    
                 </div>
             </div>
             <div>
-                <h2>¿Quieres dejarnos un comentario? <br><a href="./contacto.html" target="_blank">aquí</a></h2>
+                <h2>¿Quieres dejarnos un comentario? <br><a href="./contacto.html" target="_blank">AQUÍ</a></h2>
             </div>        
             <div id="subir">
             <a href="#encabezado"><ion-icon name="chevron-up-circle-outline"></ion-icon></a>
             </div>
-                   
         </footer>
-    </div>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
-        </script>
-    
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
-        </script>
+        </div>
+    <script type="module" src="./node_modules/bootstrap/js/bootstrap.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+    </script>
 </body>
 </html>
