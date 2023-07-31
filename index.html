@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
-    <!-- Bootstrap CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROYECTO-INTEGRADOR-WEB-UNTREFSCHOOL</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/master.css">
   
@@ -14,8 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Barra de navegación -->
+  <!-- Barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="encabezado">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="./index.html">
@@ -29,19 +32,19 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html#quienesSomos">¿Quiénes somos?</a>
+            <a class="nav-link" href="#quienesSomos">¿Quiénes somos?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./index.html#porQueElegirnos">¿Por qué elegirnos?</a>
+            <a class="nav-link" href="#porQueElegirnos">¿Por qué elegirnos?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./index.html#propuestaEducativa">Propuesta educativa</a>
+            <a class="nav-link" href="#propuestaEducativa">Propuesta educativa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./index.html#ultimasNoticias">Últimas noticias</a>
+            <a class="nav-link" href="#ultimasNoticias">Últimas noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./index.html#contacto">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>          
         </ul>
         <ul class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -55,48 +58,162 @@
       </div>
     </div>
   </nav>
-    <div class="container">
-        <div class="mb-3">
-            <h3 class="display-6 text-uppercase text-center">comentarios</h3>
-            <p>Valoramos la opinión y la participación activa de nuestros usuarios, por lo que les invitamos a dejar sus comentarios sobre su experiencia en nuestra institución educativa primaria. Creemos firmemente que el diálogo y la retroalimentación son fundamentales para mejorar constantemente y ofrecer la mejor experiencia educativa para nuestros estudiantes.</p>
-            <p>Su opinión cuenta y es de gran importancia para nosotros. Si ha sido testigo de alguna situación que merezca ser destacada, como una actividad excepcional, un logro estudiantil o una iniciativa que haya dejado una impresión positiva, nos encantaría conocerla.</p>
-            <p>De igual forma, si hay áreas en las que considera que podemos mejorar, queremos escucharlo. Nuestro objetivo es garantizar un ambiente seguro, enriquecedor y de apoyo para todos nuestros estudiantes, padres y personal. Sus comentarios nos ayudarán a identificar posibles áreas de crecimiento y nos proporcionarán valiosos puntos de vista para llevar a cabo mejoras significativas en nuestra institución.</p>
-            <p>Agradecemos su honestidad y respeto al compartir sus comentarios. Nos aseguramos de que todos los aportes serán tratados de manera confidencial y se tomarán en serio para implementar acciones concretas que beneficien a toda la comunidad educativa.</p>
-        <form action="https://formsubmit.co/el/wofela" method="POST">
-            <div>
-                <label for="Nombre" class="form-label display-7 text-uppercase fw-bold">Nombre</label>                        
-                <input type="text" name="Nombre" value="" class="form-control" id="Nombre" placeholder="Ingrese su nombre" maxlength="50" minlength="3" required>
-            </div>
 
-            <div>
-                <label for="Apellido" class="form-label display-7 text-uppercase fw-bold">Apellido</label>
-
-                <input type="text" name="Apellido" value="" class="form-control" id="Apellido" placeholder="Indique su apellido" maxlength="50" minlength="3" required>
-            </div>
-
-            <div>
-                <label for="E-mail" class="form-label display-7 text-uppercase fw-bold">E-mail</label>
-                
-                <input type="email" name="E-mail" value="" class="form-control" id="E-mail" placeholder="Indique su correo" maxlength="50" minlength="5" required>
-            </div>
-
-            <div>
-                <label for="Comentarios" class="form-label display-7 text-uppercase fw-bold">Comentarios</label>
-                
-                <textarea name="Comentarios" class="form-control" id="Comentarios" cols="30" rows="10" placeholder="Indique sus comentarios hasta 500 palabras..." maxlength="500" minlength="20" resize="none" required></textarea>
-            </div>
-            <br>
-            <div>                        
-                <input type="submit" class="btn btn-primary text-uppercase fw-bold" value="Enviar">
-                <input class="btn btn-primary text-uppercase fw-bold" type="reset" value="Limpiar">
-            </div>
-       </form>
-       <br>
-       <p>Gracias por ser parte activa de nuestra comunidad educativa. Juntos, continuaremos trabajando para brindar una educación de calidad, inspiradora y en constante evolución para nuestros estudiantes, asegurándonos de que todos alcancen su máximo potencial en su camino hacia el aprendizaje y el crecimiento personal.</p>
-       <p>Atentamente,</p>
-       <p class="text-uppercase fw-bold">UntrefSchool</p>
+  <!-- Seccion del banner -->
+  <section class="container my-4 banner-container">
+    <img src="./img/banner.jpg" alt="Banner" class="banner-image img-fluid rounded">
+    <div class="banner-text px-3 rounded">
+      <h1>INSTITUTO UNTREFSCHOOL</h1>
+    </div>
+  </section>
+  <hr class="border border-secondary border-3 opacity-75">
+  <!-- ¿Quiénes somos? -->
+  <section class="container my-4" id="quienesSomos">
+    <h2 class="text-center display-6 fw-bold text-uppercase">¿Quiénes somos?</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./img/quienesSomos.jpg" alt="Imagen" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">        
+        <p class="user-select-none">Bienvenidos a <strong>Primaria UntrefSchool</strong>, una institución educativa comprometida con el desarrollo integral de cada estudiante. Desde nuestra fundación en 1995, hemos brindado una educación de calidad, fomentando el amor por el aprendizaje, el respeto y la creatividad.</p>
+        <p class="user-select-none">Nuestro equipo docente altamente calificado trabaja arduamente para cultivar el potencial único de cada niño y niña que pasa por nuestras aulas. Creemos en una educación inclusiva y motivadora, donde cada estudiante se sienta valorado y apoyado para alcanzar el éxito académico y personal.</p>
+      </div>
+    </div>
+  </section>
+  <hr class="border border-secondary border-3 opacity-75">
+  <!-- ¿Por qué elegirnos? -->
+  <section class="container my-4" id="porQueElegirnos">
+    <h2 class="text-center display-6 fw-bold text-uppercase">¿Por qué elegirnos?</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>ENFOQUE PERSONALIZADO</h3>
+        <p class="user-select-none">Reconocemos que cada estudiante es único, por lo que ofrecemos una educación personalizada que se adapta a las necesidades y fortalezas individuales. Nuestros docentes utilizan metodologías innovadoras y recursos didácticos actualizados para garantizar un aprendizaje significativo y divertido.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>AMBIENTE ACOGEDOR Y SEGURO</h3>
+        <p class="user-select-none">En <strong>Primaria UntrefSchool</strong>, nos esforzamos por crear un ambiente cálido y seguro donde cada estudiante se sienta como en casa. Fomentamos la empatía, la amistad y el trabajo en equipo para construir una comunidad escolar positiva.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>EXCELENCIA ACADÉMICA</h3>
+        <p class="user-select-none">Nuestra institución se enorgullece de sus resultados académicos destacados. Contamos con un plan de estudios riguroso que busca desarrollar habilidades cognitivas, sociales y emocionales en nuestros alumnos, preparándolos para los desafíos del futuro.</p>
+      </div>
+    </div>
+  </section>
+  <hr class="border border-secondary border-3 opacity-75">
+  <!-- Sección Propuesta educativa -->
+  <section class="container my-5" id="propuestaEducativa">
+    <h2 class="text-center display-6 fw-bold text-uppercase">Propuesta educativa</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./img/formacionIntegral.jpg" alt="Imagen" class="img-fluid rounded">
+        <h3>Formación Integral:</h3>
+        <p class="user-select-none">Buscamos desarrollar las habilidades intelectuales, físicas, sociales y emocionales de cada estudiante. Nuestro enfoque holístico garantiza que los alumnos se conviertan en individuos equilibrados y seguros de sí mismos.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./img/metodologiaInnovadora.jpg" alt="Imagen" class="img-fluid rounded">
+        <h3>Metodología Innovadora:
+        </h3> 
+        <p class="user-select-none">Nuestro equipo docente utiliza metodologías pedagógicas modernas que fomentan el pensamiento crítico, la resolución de problemas y el aprendizaje activo. Nos adaptamos constantemente a las nuevas tendencias educativas para asegurar una educación de vanguardia.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./img/valoresCiudadania.jpg" alt="Imagen" class="img-fluid rounded">
+        <h3>Valores y Ciudadanía:</h3>
+        <p class="user-select-none">Enseñamos a nuestros estudiantes a ser ciudadanos responsables, éticos y respetuosos. Promovemos valores como la tolerancia, la solidaridad y el respeto por el medio ambiente, preparando a nuestros alumnos para ser agentes de cambio positivo en la sociedad.</p>
+      </div>
+    </div>
+  </section>
+  <hr class="border border-secondary border-3 opacity-75">
+  <!-- Sección Últimas noticias -->
+  <section class="container my-5" id="ultimasNoticias">
+    <h2 class="text-center display-6 fw-bold text-uppercase">Últimas noticias</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Visita al Museo de Ciencias Naturales:</h3>
+        <p class="user-select-none">Los estudiantes de cuarto grado disfrutaron de una emocionante visita educativa al Museo de Ciencias Naturales. Aprendieron sobre la biodiversidad, fósiles y ecosistemas, fortaleciendo su comprensión del mundo natural.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Proyecto Solidario "Unidos por un futuro mejor":</h3>
+        <p class="user-select-none">La comunidad educativa se unió para apoyar a una escuela rural cercana, donando libros, material escolar y juguetes para los niños. Fue un hermoso ejemplo de solidaridad y empatía, inculcando valores fundamentales en nuestros estudiantes.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Torneo Interescolar de Matemáticas:</h3>
+        <p class="user-select-none">Nuestros talentosos estudiantes participaron en el torneo de matemáticas, donde demostraron sus habilidades numéricas y lógicas. Felicitamos a nuestros representantes por su excelente desempeño y su entusiasmo por el aprendizaje.</p>
+      </div>
+    </div>
+  </section>
+  <hr class="border border-secondary border-3 opacity-75">
+  <!-- Sección Agradecimiento -->
+  <section class="container my-4">
+    <div>
+        <h3 class="text-center display-6 text-uppercase">¡Gracias por visitar la página web de Primaria UntrefSchool!</h3>    
+        <p class="user-select-none">Estamos comprometidos con brindar una educación de calidad y formar a los líderes del mañana. Si deseas más información o quieres formar parte de nuestra comunidad educativa, no dudes en contactarnos. Estamos ansiosos por conocerte y acompañarte en este emocionante viaje educativo.                    
+        </p>
+    </div>
+  </section>
+  
+  <!-- Sección Footer -->
+  <footer class="p-3 bg-dark text-white">
+    <div class="container text-center" id="contacto">
+      <div class="row">
+        <div class="col-md-4 d-flex align-content-center flex-wrap justify-content-center">
+          <h3 class="text-center display-6 text-uppercase ">Redes sociales</h3>          
+          <ul class="list-group ">
+            <li class="list-group-item list-group-item-dark p-2 bd-highlight">
+                <a href="https://www.facebook.com" class="text-decoration-none" target="_blank"><span class="icon-wrapper"><ion-icon name="logo-facebook"></ion-icon></span>Facebook</a>
+            </li>
+            <li class="list-group-item list-group-item-dark p-2 bd-highlight">
+                <a href="https://www.instagram.com" class="text-decoration-none" target="_blank"><span class="icon-wrapper"><ion-icon name="logo-instagram"></ion-icon></span>Instagram</a>
+            </li>
+            <li class="list-group-item list-group-item-dark p-2 bd-highlight">
+                <a href="https://www.linkedin.com" class="text-decoration-none" target="_blank"><span class="icon-wrapper"><ion-icon name="logo-linkedin"></ion-icon></span>LinkedIn</a>
+            </li>
+          </ul>
         </div>
+        <div class="col-md-4 d-flex align-content-center flex-wrap justify-content-center">
+          <h3 class="text-center display-6 text-uppercase d-flex flex-column bd-highlight mb-3">Contacto</h3>
+          <ul class="list-group ">
+            <li class="list-group-item list-group-item-dark p-2 bd-highlight">
+                <span class="icon-wrapper">
+                    <ion-icon name="mail"></ion-icon>
+                </span> Email: <a href="mailto:untrefschool@untref.com" class="text-decoration-none">untrefschool@untref.com</a>
+            </li>
+            <li class="list-group-item list-group-item-dark p-2 bd-highlight">
+                <span class="icon-wrapper">
+                    <ion-icon name="call"></ion-icon>
+                </span> Teléfono:
+                <a href="tel:+54112223333" target="_blank" class="text-decoration-none">+54 11 222 3344</a>
+            </li>
+            <li class="list-group-item list-group-item-dark p-2 bd-highlight">
+                <span class="icon-wrapper">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </span>Whatsapp:
+                <a href="https://wa.me/54112223344" target="_blank" class="text-decoration-none">+54 11 222 3344</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center">
+            <h3 class="text-center display-6 text-uppercase">Aquí nos encontramos</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1250.3270728988355!2d-56.68119529717952!3d-27.57930464082308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690289993515!5m2!1ses!2sar" width="100%" height="200" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded">
+            </iframe>          
+        </div>
+      </div>
+    </div>
+    <div class="text-center display-6">
+        <p>¿Quieres dejarnos un comentario?</p>
+        <a href="./contacto.html" target="_blank" class="text-decoration-none">AQUÍ</a>
+    </div>
+    <!-- Boton hacia arriba -->
+  <div>    
+    <a href="#encabezado"><button class="btn btn-primary btn-lg me-md-2 rounded-circle position-fixed bottom-0 end-0 me-3 mb-3" type="button"><ion-icon name="arrow-up"></ion-icon></button></a>
+  </div>  
+  </footer>  
 
-    </div>    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
