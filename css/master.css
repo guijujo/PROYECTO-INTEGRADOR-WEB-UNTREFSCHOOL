@@ -1,10 +1,24 @@
-/*=== Aplicando CSS general ===*/
-body{
+/* Aplicando CSS general */
+
+body {
     background-color: #00425A;
+    color: #EFF5F5;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container img{
-    width: 100%;
+h2 {
+    color: #1F8A70;
+    font-family: 'Belanosima', sans-serif;
+}
+
+h3 {
+    color: #FC7300;
+    font-family: 'Belanosima', sans-serif;
+}
+
+p {
+    color: #EFF5F5;
+    
 }
 
 ul{
@@ -12,58 +26,46 @@ ul{
     padding-inline-start: 0;
     margin-block-end: 0;
     gap: 15px;
-    
 }
 
-li{
-    align-content: center;
-}
-
-h2{
-    color: #1F8A70;
-    text-align: center;
-}
-h3{
-    color: #FC7300;
-}
-
-h4{
-    color: #EFF5F5;
-}
-
-p{
-    color: #EFF5F5;
-    text-align: justify;
-}
-
-a{
-    text-decoration: none;
-    color: #EFF5F5;    
-}
-
-form{
-    color: #EFF5F5;
-}
-
-textarea {
-    height: 100px;
-    width: 100%;
+textarea{
     resize: none;
 }
-
-article{
-    margin-bottom: 5%;
+.container img{
+        width: 100%;
 }
 
-
-/*=== Aplicacndo CSS al encabezado ===*/
-
-.p-2 {
-    padding: 0 !important;
-    font-size: medium;
+.banner-container {
+    position: relative;
 }
 
+.banner-image {
+    width: 100%;
+}
 
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:  #EFF5F5;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2%;
+}
 
+.icon-wrapper {
+    display: inline-block;
+    margin-right: 5px;
+}
 
+  /* Navbar Styles */
+.navbar {
+    background-color: #00425A;
+}
 
+  .navbar-brand img {
+    background-color: #EFF5F5;
+    padding: 5px;
+    border-radius: 5%;
+  }
