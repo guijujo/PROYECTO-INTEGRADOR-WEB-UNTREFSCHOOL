@@ -64,8 +64,11 @@ textarea{
     background-color: #00425A;
 }
 
-  .navbar-brand img {
+.navbar-brand img {
     background-color: #EFF5F5;
-    padding: 5px;
-    border-radius: 5%;
-  }
+    padding: 5px;    
+}
+
+.my-5{
+    padding: 0;
+}
