@@ -1,112 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
-    <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/master.css">
+    <title>PROYECTO-INTEGRADOR-WEB-UNTREFSCHOOL</title>
   
-  <!-- Fuentes de Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/master.css">
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
 <body>
-    <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="encabezado">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="./index.html">
-        <img src="./img/logo_untref.png" alt="Logo" width="80" height="50" class="d-inline-block align-text-top me-2">
-        UntrefSchool
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html#quienesSomos">¿Quiénes somos?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html#porQueElegirnos">¿Por qué elegirnos?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html#propuestaEducativa">Propuesta educativa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html#ultimasNoticias">Últimas noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>          
-        </ul>
-        <ul class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio de sesión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Registrarse</a>
-          </li>
-        </ul>
+  <!-- Barra de navegación -->
+  <header class="navbar navbar-expand-lg bd-navbar p-0 sticky-top">
+    <nav class="navbar navbar-expand-lg container-xxl navbar-dark  bg-dark flex-wrap flex-lg-nowrap">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="./index.html">
+          <img src="./img/logo_untref.png" alt="Logo" width="80" height="50" class="d-inline-block align-text-top me-2 rounded">
+          UntrefSchool
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#quienesSomos">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#porQueElegirnos">¿Por qué elegirnos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#propuestaEducativa">Propuesta educativa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ultimasNoticias">Últimas noticias</a>
+            </li>
+            <li class="nav-item d-flex flex-column justify-content-center">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>          
+          </ul>
+          <div>
+            <ul class="collapse row row-cols-2  navbar-collapse justify-content-center" id="navbarNav">
+              <li class="col-2 m-auto p-0 justify-content-center text-center nav-item">
+                <a class="nav-link text-nowrap" href="#">Inicio sesión</a>
+              </li>
+              
+              <li class="col-2 m-auto p-0 justify-content-center text-center nav-item">
+                <a class="nav-link justify-content-center" href="#">Registrarse</a>
+              </li>
+            </ul>
+          </div>          
+        </div>
       </div>
-    </div>
-  </nav>
-    <div class="container">
+    </nav>
+  </header>
+
+  <!-- Sección del encabezado -->
+  <section class="container" id="encabezado">
+    <div class="my-4">
+      <h3 class="display-6 text-uppercase text-center">comentarios</h3> 
+    </div>      
+  </section>  
+
+  <div class="container" id="textoDescriptivo">
         <div class="mb-3">
-            <!-- Seccion de Texto descriptivo -->
-            <h3 class="display-6 text-uppercase text-center">comentarios</h3> 
-            <p>Valoramos la opinión y la participación activa de nuestros usuarios, por lo que les invitamos a dejar sus comentarios sobre su experiencia en nuestra institución educativa primaria. Creemos firmemente que el diálogo y la retroalimentación son fundamentales para mejorar constantemente y ofrecer la mejor experiencia educativa para nuestros estudiantes.</p>
-            <p>Su opinión cuenta y es de gran importancia para nosotros. Si ha sido testigo de alguna situación que merezca ser destacada, como una actividad excepcional, un logro estudiantil o una iniciativa que haya dejado una impresión positiva, nos encantaría conocerla.</p>
-            <p>De igual forma, si hay áreas en las que considera que podemos mejorar, queremos escucharlo. Nuestro objetivo es garantizar un ambiente seguro, enriquecedor y de apoyo para todos nuestros estudiantes, padres y personal. Sus comentarios nos ayudarán a identificar posibles áreas de crecimiento y nos proporcionarán valiosos puntos de vista para llevar a cabo mejoras significativas en nuestra institución.</p>
-            <p>Agradecemos su honestidad y respeto al compartir sus comentarios. Nos aseguramos de que todos los aportes serán tratados de manera confidencial y se tomarán en serio para implementar acciones concretas que beneficien a toda la comunidad educativa.</p>
+          <!-- Seccion de Texto descriptivo -->
+        <div class="container">               
+          <p>Valoramos la opinión y la participación activa de nuestros usuarios, por lo que les invitamos a dejar sus comentarios sobre su experiencia en nuestra institución educativa primaria. Creemos firmemente que el diálogo y la retroalimentación son fundamentales para mejorar constantemente y ofrecer la mejor experiencia educativa para nuestros estudiantes.</p>
+          <p>Su opinión cuenta y es de gran importancia para nosotros. Si ha sido testigo de alguna situación que merezca ser destacada, como una actividad excepcional, un logro estudiantil o una iniciativa que haya dejado una impresión positiva, nos encantaría conocerla.</p>
+          <p>De igual forma, si hay áreas en las que considera que podemos mejorar, queremos escucharlo. Nuestro objetivo es garantizar un ambiente seguro, enriquecedor y de apoyo para todos nuestros estudiantes, padres y personal. Sus comentarios nos ayudarán a identificar posibles áreas de crecimiento y nos proporcionarán valiosos puntos de vista para llevar a cabo mejoras significativas en nuestra institución.</p>
+          <p>Agradecemos su honestidad y respeto al compartir sus comentarios. Nos aseguramos de que todos los aportes serán tratados de manera confidencial y se tomarán en serio para implementar acciones concretas que beneficien a toda la comunidad educativa.</p>
+        </div>
+        <hr class="border border-secondary border-3 opacity-75">
+
         <!-- Seccion de formulario de contacto -->
-            <form action="https://formsubmit.co/el/wofela" method="POST">
+        <div class="container">
+          <form action="https://formsubmit.co/el/wofela" method="POST">
             <div>
-                <label for="Nombre" class="form-label display-7 text-uppercase fw-bold">Nombre</label>                        
+              <label for="Nombre" class="form-label display-7 text-uppercase fw-bold">Nombre</label>                        
                 <input type="text" name="Nombre" value="" class="form-control" id="Nombre" placeholder="Ingrese su nombre" maxlength="50" minlength="3" required>
             </div>
-
+    
             <div>
-                <label for="Apellido" class="form-label display-7 text-uppercase fw-bold">Apellido</label>
-
-                <input type="text" name="Apellido" value="" class="form-control" id="Apellido" placeholder="Indique su apellido" maxlength="50" minlength="3" required>
+               <label for="Apellido" class="form-label display-7 text-uppercase fw-bold">Apellido</label>
+                  <input type="text" name="Apellido" value="" class="form-control" id="Apellido" placeholder="Indique su apellido" maxlength="50" minlength="3" required>
             </div>
-
+    
             <div>
-                <label for="E-mail" class="form-label display-7 text-uppercase fw-bold">E-mail</label>
-                
-                <input type="email" name="E-mail" value="" class="form-control" id="E-mail" placeholder="Indique su correo" maxlength="50" minlength="5" required>
+              <label for="E-mail" class="form-label display-7 text-uppercase fw-bold">E-mail</label>
+              <input type="email" name="E-mail" value="" class="form-control" id="E-mail" placeholder="Indique su correo" maxlength="50" minlength="5" required>
             </div>
-
+    
             <div>
-                <label for="Comentarios" class="form-label display-7 text-uppercase fw-bold">Comentarios</label>
-                
-                <textarea name="Comentarios" class="form-control" id="Comentarios" cols="30" rows="10" placeholder="Indique sus comentarios hasta 500 palabras..." maxlength="500" minlength="20" resize="none" required></textarea>
+              <label for="Comentarios" class="form-label display-7 text-uppercase fw-bold">Comentarios</label>
+              <textarea name="Comentarios" class="form-control" id="Comentarios" cols="30" rows="10" placeholder="Indique sus comentarios hasta 500 palabras..." maxlength="500" minlength="20" resize="none" required></textarea>
             </div>
             <br>
             <div>                        
-                <input type="submit" class="btn btn-primary text-uppercase fw-bold" value="Enviar">
-                <input class="btn btn-primary text-uppercase fw-bold" type="reset" value="Limpiar">
+              <input type="submit" class="btn btn-primary text-uppercase fw-bold" value="Enviar">
+              <input class="btn btn-primary text-uppercase fw-bold" type="reset" value="Limpiar">
             </div>
-       </form>
-       <br>
+           </form>
+        </div>
+            
+       <hr class="border border-secondary border-3 opacity-75">
+      
        <!-- Seccion de agradecimiento -->
+       <div class="container" id="agradecimiento">
        <p>Gracias por ser parte activa de nuestra comunidad educativa. Juntos, continuaremos trabajando para brindar una educación de calidad, inspiradora y en constante evolución para nuestros estudiantes, asegurándonos de que todos alcancen su máximo potencial en su camino hacia el aprendizaje y el crecimiento personal.</p>
        <p>Atentamente,</p>
        <p class="text-uppercase fw-bold">UntrefSchool</p>
         </div>
     </div>
-    <!-- Sección Footer -->
+    </div>
+
+    
+  <!-- Sección Footer --> 
   <footer class="p-3 bg-dark text-white">
     <div class="container text-center" id="contacto">
+
+      <!-- Redes sociales del Instituto -->
       <div class="row">
-        <div class="col-md-3 d-flex align-content-center flex-wrap justify-content-center">
-          <h3 class="text-center display-6 text-uppercase ">Redes sociales</h3>          
-          <ul class="list-group ">
+        <div class="col-md-4 d-flex flex-column bd-highlight mb-3 justify-content-center">
+          <h3 class="text-center display-6 text-uppercase d-flex flex-column bd-highlight mb-3">Redes sociales</h3>          
+          <ul class="list-group">
             <li class="list-group-item list-group-item-dark p-2 bd-highlight">
                 <a href="https://www.facebook.com" class="text-decoration-none" target="_blank"><span class="icon-wrapper"><ion-icon name="logo-facebook"></ion-icon></span>Facebook</a>
             </li>
@@ -118,9 +143,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-4 d-flex align-content-center flex-wrap justify-content-center">
-          <h3 class="text-center display-6 text-uppercase d-flex flex-column bd-highlight mb-3">Contacto</h3>
-          <ul class="list-group ">
+
+        <!--Contacto del Instituto -->
+        <div class="col-md-3 d-flex flex-column bd-highlight mb-3 justify-content-center">
+          <h3 class="text-center display-6 text-uppercase d-flex flex-column bd-highlight mb-3 ">Contacto</h3>
+          <ul class="list-group">
             <li class="list-group-item list-group-item-dark p-2 bd-highlight">
                 <span class="icon-wrapper">
                     <ion-icon name="mail"></ion-icon>
@@ -140,19 +167,21 @@
             </li>
           </ul>
         </div>
-        <div class="col text-center">
+
+        <!-- Mapa de la institución -->
+        <div class="col text-center d-flex flex-column bd-highlight mb-3">
             <h3 class="text-center display-6 text-uppercase">Aquí nos encontramos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1250.3270728988355!2d-56.68119529717952!3d-27.57930464082308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690289993515!5m2!1ses!2sar" width="100%" height="200" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1250.3270728988355!2d-56.68119529717952!3d-27.57930464082308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690289993515!5m2!1ses!2sar" width="100%" height="100" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded">
             </iframe>          
         </div>
       </div>
-    </div>
-    
+    </div>    
     <!-- Boton hacia arriba -->
-  <div>    
-    <a href="#encabezado"><button class="btn btn-primary btn-lg me-md-2 rounded-circle position-fixed bottom-0 end-0 me-3 mb-3" type="button"><ion-icon name="arrow-up"></ion-icon></button></a>
-  </div>  
-  </footer> 
+    <div>    
+      <a href="#encabezado"><button class="btn btn-primary btn-lg me-md-2 rounded-circle position-fixed bottom-0 end-0 me-3 mb-3" type="button"><ion-icon name="arrow-up"></ion-icon></button></a>
+    </div> 
+  </footer>
+
     <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     
