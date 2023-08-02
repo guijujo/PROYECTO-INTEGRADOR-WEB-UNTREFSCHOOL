@@ -19,57 +19,65 @@
 
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="encabezado">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="./index.html">
-        <img src="./img/logo_untref.png" alt="Logo" width="80" height="50" class="d-inline-block align-text-top me-2 rounded">
-        UntrefSchool
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#quienesSomos">¿Quiénes somos?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#porQueElegirnos">¿Por qué elegirnos?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#propuestaEducativa">Propuesta educativa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ultimasNoticias">Últimas noticias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>          
-        </ul>
-        <ul class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio sesión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Registrarse</a>
-          </li>
-        </ul>
+  <header class="navbar navbar-expand-lg bd-navbar p-0 sticky-top">
+    <nav class="navbar navbar-expand-lg container-xxl navbar-dark  bg-dark flex-wrap flex-lg-nowrap">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="./index.html">
+          <img src="./img/logo_untref.png" alt="Logo" width="80" height="50" class="d-inline-block align-text-top me-2 rounded">
+          UntrefSchool
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#quienesSomos">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#porQueElegirnos">¿Por qué elegirnos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#propuestaEducativa">Propuesta educativa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ultimasNoticias">Últimas noticias</a>
+            </li>
+            <li class="nav-item d-flex flex-column justify-content-center">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>          
+          </ul>
+          <div>
+            <ul class="collapse row row-cols-2  navbar-collapse justify-content-center" id="navbarNav">
+              <li class="col-2 m-auto p-0 justify-content-center text-center nav-item">
+                <a class="nav-link text-nowrap" href="#">Inicio sesión</a>
+              </li>
+              
+              <li class="col-2 m-auto p-0 justify-content-center text-center nav-item">
+                <a class="nav-link justify-content-center" href="#">Registrarse</a>
+              </li>
+            </ul>
+          </div>          
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  
 
   <!-- Seccion del banner -->
-  <section class="container my-4 shadow p-3 mb-5 rounded ">
-    <div class="card text-bg-dark ">
+  
+  <section class="container my-4 rounded" id="encabezado">
+        <div class="card text-bg-dark">
       <img src="./img/banner.jpg" alt="Banner" class="card-img rounded">
     <div class="card-img-overlay">
-      <h2 class="card-title text-center bg-dark rounded bg-success p-2 bg-opacity-50">INSTITUTO UNTREFSCHOOL</h2>
-      <p class="card-text text-center bg-dark rounded bg-success p-2 bg-opacity-50">Sembrando sueños, cultivando conocimientos: Juntos hacia un futuro brillante.</p>
+      <h2 class="card-title text-center bg-dark rounded bg-success p-2 bg-opacity-50 fs-3">INSTITUTO UNTREFSCHOOL</h2>
+      <p class="card-text text-center bg-dark rounded bg-success p-2 bg-opacity-50 fs-6">Sembrando sueños, cultivando conocimientos: Juntos hacia un futuro brillante.</p>
     </div>
     </div>
   </section>
   <hr class="border border-secondary border-3 opacity-75">
+
   <!-- ¿Quiénes somos? -->
   <section class="container my-4" id="quienesSomos">
     <div class="card mb-3 text-bg-dark">    
@@ -92,21 +100,21 @@
         <div class="card-header">
           <h3>ENFOQUE PERSONALIZADO</h3>
         </div>
-          <p class="card-text user-select-none pb-2w">Reconocemos que cada estudiante es único, por lo que ofrecemos una educación personalizada que se adapta a las necesidades y fortalezas individuales. Nuestros docentes utilizan metodologías innovadoras y recursos didácticos actualizados para garantizar un aprendizaje significativo y divertido.</p>
+          <p class="card-text user-select-none pb-3">Reconocemos que cada estudiante es único, por lo que ofrecemos una educación personalizada que se adapta a las necesidades y fortalezas individuales. Nuestros docentes utilizan metodologías innovadoras y recursos didácticos actualizados para garantizar un aprendizaje significativo y divertido.</p>
         </div>
       
-      <div class="card col-md-3 text-bg-dark mx-auto my-2" style="max-width: 18rem;"> 
+      <div class="card col-md-3 text-bg-dark mx-auto  my-2" style="max-width: 18rem;"> 
         <div class="card-header">
           <h3>AMBIENTE ACOGEDOR Y SEGURO</h3>
         </div>           
-          <p class="card-text ser-select-none pb-2w">En <strong>Primaria UntrefSchool</strong>, nos esforzamos por crear un ambiente cálido y seguro donde cada estudiante se sienta como en casa. Fomentamos la empatía, la amistad y el trabajo en equipo para construir una comunidad escolar positiva.</p>        
+          <p class="card-text ser-select-none">En <strong>Primaria UntrefSchool</strong>, nos esforzamos por crear un ambiente cálido y seguro donde cada estudiante se sienta como en casa. Fomentamos la empatía, la amistad y el trabajo en equipo para construir una comunidad escolar positiva.</p>        
       </div>
 
       <div class="card text-bg-dark my-2" style="max-width: 18rem;">
         <div class="card-header">
           <h3>EXCELENCIA ACADÉMICA</h3>
         </div>      
-        <p class="card-text user-select-none pb-2w">Nuestra institución se enorgullece de sus resultados académicos destacados. Contamos con un plan de estudios riguroso que busca desarrollar habilidades cognitivas, sociales y emocionales en nuestros alumnos, preparándolos para los desafíos del futuro.</p>       
+        <p class="card-text user-select-none">Nuestra institución se enorgullece de sus resultados académicos destacados. Contamos con un plan de estudios riguroso que busca desarrollar habilidades cognitivas, sociales y emocionales en nuestros alumnos, preparándolos para los desafíos del futuro.</p>       
     </div>
     </div>        
   </section>
@@ -116,22 +124,21 @@
   <section class="container my-5" id="propuestaEducativa">
     <h2 class="text-center display-6 text-uppercase">Propuesta educativa</h2>
     <div class="row row-cols-md-3 justify-content-center">
-      <div class="card mb-3 col-md-3 text-bg-dark" style="max-width: 18rem;">
-        <img src="./img/formacionIntegral.jpg" class="card-img-top rounded" alt="formacionIntegral">
-        <div class="card-body">
-          <h3>Formación Integral:</h3>
+      <div class="card mb-3 col-md-3 text-bg-dark" style="max-width: 18rem;"  aria-hidden="true">
+        <img src="./img/formacionIntegral.jpg" class="card-img-top object-fit-fill border rounded" alt="formacionIntegral">
+          <h3 class="pt-2">Formación Integral:</h3>
           <p class="card-text user-select-none pb-2">Buscamos desarrollar las habilidades intelectuales, físicas, sociales y emocionales de cada estudiante. Nuestro enfoque holístico garantiza que los alumnos se conviertan en individuos equilibrados y seguros de sí mismos.</p>
-          </div>
+          
         </div>      
-      <div class="card mb-3 col-md-3 text-bg-dark mx-auto" style="max-width: 18rem;">
-        <img src="./img/metodologiaInnovadora.jpg" alt="Imagen" class="img-fluid rounded">
-        <h3>Metodología Innovadora:
+      <div class="card mb-3 col-md-3 text-bg-dark mx-auto " style="max-width: 18rem;"  aria-hidden="true">
+        <img src="./img/metodologiaInnovadora.jpg" alt="Imagen" class="card-img-top object-fit-fill border rounded">
+        <h3 class="pt-2">Metodología Innovadora:
         </h3> 
-        <p class="card-text user-select-none pb-2">Nuestro equipo docente utiliza metodologías pedagógicas modernas que fomentan el pensamiento crítico, la resolución de problemas y el aprendizaje activo. Nos adaptamos constantemente a las nuevas tendencias educativas para asegurar una educación de vanguardia.</p>
+        <p class="card-text user-select-none pb-3">Nuestro equipo docente utiliza metodologías pedagógicas modernas que fomentan el pensamiento crítico, la resolución de problemas y el aprendizaje activo. Nos adaptamos constantemente a las nuevas tendencias educativas para asegurar una educación de vanguardia.</p>
       </div>
-      <div class="card mb-3 col-md-3 text-bg-dark" style="max-width: 18rem;">
-        <img src="./img/valoresCiudadania.jpg" alt="Imagen" class="img-fluid rounded">
-        <h3>Valores y Ciudadanía:</h3>
+      <div class="card mb-3 col-md-3 text-bg-dark" style="max-width: 18rem;"  aria-hidden="true">
+        <img src="./img/valoresCiudadania.jpg" alt="Imagen" class="card-img-top object-fit-fill border rounded">
+        <h3 class="pt-2">Valores y Ciudadanía:</h3>
         <p class="card-text user-select-none pb-2">Enseñamos a nuestros estudiantes a ser ciudadanos responsables, éticos y respetuosos. Promovemos valores como la tolerancia, la solidaridad y el respeto por el medio ambiente, preparando a nuestros alumnos para ser agentes de cambio positivo en la sociedad.</p>
       </div>
     </div>
@@ -143,21 +150,21 @@
     <h2 class="text-center display-6 text-uppercase">Últimas noticias</h2>
     <div class="row row-cols-md-3 justify-content-center">
 
-      <div class="card text-bg-dark my-2" style="max-width: 18rem;">
+      <div class="card text-bg-dark my-2" style="max-width: 18rem;"  aria-hidden="true">
           <div class="card-header">
             <h3>Visita al Museo de Ciencias Naturales:</h3>
           </div>
-        <p class="card-text user-select-none pb-2w">Los estudiantes de cuarto grado disfrutaron de una emocionante visita educativa al Museo de Ciencias Naturales. Aprendieron sobre la biodiversidad, fósiles y ecosistemas, fortaleciendo su comprensión del mundo natural.</p>
+        <p class="card-text user-select-none pb-2">Los estudiantes de cuarto grado disfrutaron de una emocionante visita educativa al Museo de Ciencias Naturales. Aprendieron sobre la biodiversidad, fósiles y ecosistemas, fortaleciendo su comprensión del mundo natural.</p>
       </div>
 
-      <div class="card col-md-3 text-bg-dark mx-auto my-2" style="max-width: 18rem;">        
+      <div class="card col-md-3 text-bg-dark mx-auto my-2" style="max-width: 18rem;"  aria-hidden="true">        
           <div class="card-header">
             <h3>Proyecto Solidario "Unidos por un futuro mejor":</h3>
           </div>
-        <p class="card-text user-select-none pb-2">La comunidad educativa se unió para apoyar a una escuela rural cercana, donando libros, material escolar y juguetes para los niños. Fue un hermoso ejemplo de solidaridad y empatía, inculcando valores fundamentales en nuestros estudiantes.</p>        
+        <p class="card-text user-select-none pb-3">La comunidad educativa se unió para apoyar a una escuela rural cercana, donando libros, material escolar y juguetes para los niños. Fue un hermoso ejemplo de solidaridad y empatía, inculcando valores fundamentales en nuestros estudiantes.</p>        
       </div>
 
-      <div class="card text-bg-dark my-2" style="max-width: 18rem;">        
+      <div class="card text-bg-dark my-2" style="max-width: 18rem;"  aria-hidden="true">        
           <div class="card-header">
             <h3>Torneo Interescolar de Matemáticas:</h3>
           </div>
@@ -179,11 +186,13 @@
   <!-- Sección Footer -->
   <footer class="p-3 bg-dark text-white">
     <div class="container text-center" id="contacto">
+
+      <!-- Redes sociales del Instituto -->
       <div class="row">
-        <div class="col-md-3 d-flex align-content-center flex-wrap justify-content-center">
-          <h3 class="text-center display-6 text-uppercase d-flex flex-column bd-highlight mb-3">Redes sociales</h3>          
+        <div class="col-md-4 d-flex flex-column bd-highlight mb-3 justify-content-center">
+          <h3 class="text-center text-uppercase d-flex flex-column bd-highlight mb-3">Redes sociales</h3>          
           <ul class="list-group">
-            <li class="list-group-item list-group-item-dark px-2 bd-highlight">
+            <li class="list-group-item list-group-item-dark p-2 bd-highlight">
                 <a href="https://www.facebook.com" class="text-decoration-none" target="_blank"><span class="icon-wrapper"><ion-icon name="logo-facebook"></ion-icon></span>Facebook</a>
             </li>
             <li class="list-group-item list-group-item-dark p-2 bd-highlight">
@@ -194,13 +203,15 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-4 d-flex align-content-center flex-wrap justify-content-center ">
-          <h3 class="text-center display-6 text-uppercase d-flex flex-column bd-highlight mb-3 ">Contacto</h3>
-          <ul class="list-group ">
+
+        <!--Contacto del Instituto -->
+        <div class="col-md-4 d-flex flex-column justify-content-center bd-highlight mb-3">
+          <h3 class="text-center text-uppercase d-flex flex-column bd-highlight mb-3 ">Contacto</h3>
+          <ul class="list-group">
             <li class="list-group-item list-group-item-dark p-2 bd-highlight">
                 <span class="icon-wrapper">
                     <ion-icon name="mail"></ion-icon>
-                </span> Email: <a href="mailto:untrefschool@untref.com" class="text-decoration-none">untrefschool@untref.com</a>
+                </span> Email: <a href="mailto:untrefschool@untref.com" class="text-decoration-none text-wrap">untrefschool@untref.com</a>
             </li>
             <li class="list-group-item list-group-item-dark p-2 bd-highlight">
                 <span class="icon-wrapper">
@@ -216,14 +227,16 @@
             </li>
           </ul>
         </div>
-        <div class="col text-center">
-            <h3 class="text-center display-6 text-uppercase">Aquí nos encontramos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1250.3270728988355!2d-56.68119529717952!3d-27.57930464082308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690289993515!5m2!1ses!2sar" width="100%" height="200" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded">
+
+        <!-- Mapa de la institución -->
+        <div class="col-md-4 d-flex flex-column bd-highlight mb-3 justify-content-center">
+            <h3 class=" text-center text-uppercase">Aquí nos encontramos</h3>
+            <iframe class="m-auto rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1250.3270728988355!2d-56.68119529717952!3d-27.57930464082308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1690289993515!5m2!1ses!2sar" width="100%" height="150"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded">
             </iframe>          
         </div>
       </div>
     </div>
-    <div class="text-center display-6">
+    <div class="text-center">
         <p>¿Quieres dejarnos un comentario?</p>
         <a href="./contacto.html" target="_blank" class="text-decoration-none">AQUÍ</a>
     </div>
@@ -234,7 +247,7 @@
   </footer>  
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
